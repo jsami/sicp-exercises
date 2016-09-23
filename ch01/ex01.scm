@@ -16,7 +16,6 @@
   (+ largest (max-on-three-and-different-from largest a b c)))
 
 ;; let's suppose that max function is not yet defined in the environment
-
 (define (max a b)
   (if (< a b)
       b
