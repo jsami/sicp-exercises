@@ -12,7 +12,7 @@
 
 ;; Procedure that takes 3 numbers as arguments and return the sum of the square of the two larger numbers
 (define (sum-of-two-larger a b c)
-  (define largest (max-three a b c))
+  (define largest (max-on-three a b c))
   (+ largest (max-on-three-and-different-from largest a b c)))
 
 ;; let's suppose that max function is not yet defined in the environment
