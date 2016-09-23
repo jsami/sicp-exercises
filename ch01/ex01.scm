@@ -21,5 +21,4 @@
 	((= b diff) (max a c))
 	((= c diff) (max a b))))
 
-
 (writeline (sum-of-two-larger 12 3 44))
