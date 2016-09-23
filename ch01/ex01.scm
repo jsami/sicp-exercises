@@ -13,7 +13,7 @@
 ;; Procedure that takes 3 numbers as arguments and return the sum of the square of the two larger numbers
 (define (sum-of-two-larger a b c)
   (define largest (max-three a b c))
-  (+ largest (max-three-different-from largest a b c)))
+  (+ largest (max-on-three-different-from largest a b c)))
 
 ;; let's suppose that max function is not yet defined in the environment
 (define (max a b)
@@ -21,10 +21,10 @@
       b
       a))
 
-(define (max-three a b c)
+(define (max-on-three a b c)
   (max a (max b c)))
 
-(define (max-three-different-from diff a b c)
+(define (max-on-three-different-from diff a b c)
   (cond ((= a diff) (max b c))
 	((= b diff) (max a c))
 	((= c diff) (max a b))))
